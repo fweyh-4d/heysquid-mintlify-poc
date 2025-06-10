@@ -1,0 +1,51 @@
+---
+title: "Workflow"
+description: "Description of your new file."
+---
+
+# Créer un flux de travail
+
+Pour chaque flux de travail, vous devez définir :
+
+- Un nom
+- Une description (facultatif)
+- Les étapes du flux
+- Les transitions entre les étapes
+
+## Définition des étapes
+
+1. Pour chaque étape, définir un libellé et l'état de workflow associé.
+
+   Note:
+
+   Le libellé n'est pas le nom de l'étape visible par les utilisateurs dans l'application.
+
+   Par défaut, la première étape créée est l'étape initiale du flux de travail.
+2. Cliquer sur  pour rendre une autre étape initiale.
+
+   À chaque création d'une étape, celle-ci apparaît sous forme graphique dans la partie Définition des transitions dans l'ordre que vous avez défini.
+3. Lorsque toutes les étapes sont créées, cliquer sur Ajouter une transition pour définir les liens entre les étapes.
+
+## Définition des transitions
+
+Une transition s'effectue entre 2 étapes.
+
+Pour chaque transition, vous devez définir :
+
+- Un libellé : le libellé est le nom de l'action qui s'affiche dans l'application pour passer d'une étape à la suivante, c'est à dire l'action de menu (ex. : "Mettre le contenu en validation")
+- Une icône associée
+- Une couleur pour cette icône (facultatif)
+- L'étape d'origine et l'étape de destination. Il peut y avoir plusieurs étapes d'origine pour une même étape de destination.
+
+Des paramètres avancés sont également disponibles :
+
+- Affichage de la transition: pour définir une action à faire par l'utilisateur lors de la transition.
+- Contraintes : pour choisir les utilisateurs ou groupes pour qui cette transition sera accessible ou non (par défaut, tout le monde).
+- Validateurs : pour choisir une vérification interne à effectuer par l'application après l'action utilisateur.
+- Fonctions : pour choisir une action interne à effectuer par l'application suite à la validation de l'action.
+
+Plusieurs contraintes, validateurs et fonctions peuvent être associés.
+
+Lorsqu'une transition est créée, elle s'affiche sous forme de flèche entre les étapes choisies.
+
+À la fin de la configuration de votre flux de travail, vous pouvez le vérifier grâce à sa représentation graphique.
